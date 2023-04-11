@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+}
+
+.backgroundtop {
+    background-image: url("images/backgroundtop.png");
+    height: 657px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+ 
