@@ -4,21 +4,203 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-
-    <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <!-- <script src="scripts.js">
+    var typing=new Typed(".text", {
+			strings: [ "Web Designer", "Freelancer", "Graphics Designer", "Web Developer"],
+			typeSpeed: 100,
+			backSpeed: 40,
+			loop: true,
+		});</script> -->
     <title>Clyde Richard L. Abelanio - Portfolio</title>
+<style>
+
+
+</style>
 </head>
 <body >
     <div class="backgroundtop">
+      <div class="d-block d-lg-none d-xl-none">
+        <nav class="navbar navbar-inverse">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+              </button>
+              <a class="navbar-brand" href="#">Portfolio</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Education</a></li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5"></div><div class="col-lg-7 d-none d-sm-block d-sm-none ">
+  <nav class="navbar navbar-expand-sm links" >
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#About">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Experience</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Education</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+    </ul>
+</nav></div>
+
+
+
+</div>
+</div>
+<div class="container ">
+        <div class="row"><div class="col-lg-1"></div>
+            <div class="col-lg-6 mb-5">
+        <div class="introductionself">
+           
+            <p class="paragraph">Hi, my name is</p>
+            <b><h1><span class="span1">Clyde Richard L. Abelanio</span></h1></b>
+          <div class="iam">I am <span class="text"></span></div>
+            <script>
+              var typing=new Typed(".text", {
+                strings: [ "Web Developer", "Programmer", "Teacher", "Office Worker", "Artist"],
+                typeSpeed: 100,
+                backSpeed: 40,
+                loop: true,
+              });
+             </script>
+          <p class="paragraph">and I have recently completed my bootcamp. I also a  graduate<br>
+            of a Bachelor of Science in Information technologyat Aclc <br>
+            college of Bukidnon I have a passion all technology software <br>
+            engineering UI/UX. </p>
+        </div>
+        </div>
+            <div class="introductionself col-lg-5 d-none d-sm-block d-sm-none "><img src="images/hongkoong.jpg" alt="picture" height="330px" width="330px"></div>
+        </div>
+    
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <b><h1 class="h1links">Links</h1></b>
+        </div>
+      </div>
+        <div class="row">
+          
+          <div class="col-lg-12 mb-5 text-center">
+          <a href=""><img class="socialmedia" src="images/facebook.webp" alt="facebook" ></a>
+          <a href=""></a><img class="socialmedia" src="images/github.png" alt="github" ></a>
+          <a href=""></a><img class="socialmedia" src="images/linkid.png" alt="linkid" ></a>
+        </div>
+      </div>
+      </div>
+      <div class="container">
+      <div class="row">
+        <div class="col-lg-12 mt-5 text-center colordiv">
+      <h1 id="About">About</h1>
+      <h1 class="ml2" >My, Myself and I</h1>
+<script>
+  // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml2');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml2 .letter',
+    scale: [4,1],
+    opacity: [0,1],
+    translateZ: 0,
+    easing: "easeOutExpo",
+    duration: 950,
+    delay: (el, i) => 70*i
+  }).add({
+    targets: '.ml2',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+</script>
+      <div class="row"><div class="col-lg-3">
+        <img src="images/hongkoong.jpg" alt="Clyde Richard" height="200px" ></div>
+      <div class="col-lg-8 text-justify mt-5">
+        <p class="paragraph">I'm a Programmer located at Valencia City, Bukidnon. I 
+          have a serious passion for programming and art. A graduated of 
+          Bachelor of Science Information Technology and take  
+          a bootcamp to refresh my knowledge to new technology. And 
+          created projects for the past few years. Sometimes I explore other programming langguage
+          to enhance my skills and my logic in programming, and apply to actual 
+          work in the future.
+        </p>
+        </div>
         
       </div>
+    </div>
+      </div>
+      </div>
+      <div class="text-center"><h1></h1>
+      </div>
+      <div class="container">
+      <div class="row">
+       <div class="col-lg-12 text-center"> <b><h1 class="h1links">Skills</h1></b></div>
+        <div class="col-lg-12 text-center ">
+        <img class="paddingsimage paddingimage2top" src="images/Bootstrap_logo.svg.png" alt="bootstrap" height="150px" width="210px">
+        <img class="paddingsimage" src="images/JavaScript-logo.png" alt="Javascript" height="130px" > 
+        <img class="paddingsimage" src="images/laravel-featured.png" alt="Laravel" height="180px" width="210px">
+        <img class="paddingsimage" src="images/php.png" alt="Php" height="130px"> 
+        <img class="paddingsimage paddingimage2top" src="images/Mysql_logo.png" alt="Mysql" height="110px"> 
+        </div>
+        <div class="col-lg-12 text-center ">
+          <img class="paddingimage2top" src="images/Java_programming_language_logo.svg.png" alt="Java" height="150px" width="180px">
+          <img class="paddingsimage2 paddingimage2top" src="images/C++.png" alt="C++" height="180px" > 
+          <img class="paddingsimage2 paddingimage2top" src="images/c sharp.png" alt="Csharp" height="180px" >
+          <img class="paddingsimage2 paddingimage2top" src="images/VB.NET_Logo.svg.png" alt="Php" height="180px"> 
+          <img class="paddingsimage2 paddingimage2top" src="images/SSMS18logo.jpg" alt="Mysql" height="180px"> 
+          </div>
+        
+      </div>
+      
+      </div>
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center ">
+          <img class="paddingsimage2" src="images/Java_programming_language_logo.svg.png" alt="Java" height="130px" >
+          <img class="paddingsimage2" src="images/C++.png" alt="C++" height="130px" > 
+          <img class="paddingsimage2" src="images/c sharp.png" alt="c#" height="130px" >
+          <img class="paddingsimage2" src="images/VB.NET_Logo.svg.png" alt="Visual Basic.net" height="130px"> 
+          <img class="paddingsimage2" src="images/smss-logo.png" alt="smss-logo" height="130px"> 
+          </div>
+        </div>
+      </div>
+       -->
 </body>
 </html>
